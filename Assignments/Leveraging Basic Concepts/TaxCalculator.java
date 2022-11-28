@@ -3,17 +3,17 @@ import java.util.Scanner;
 public class TaxCalculator {
     public static void main(String[] args) {
 
-        /* Tax Calculator */
+        
         System.out.println(" Tax Calculator App ");
         System.out.println("----- WELCOME ------");
 
-        System.out.println();   // Just a new line
+        System.out.println();   
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter total person count: ");
         int n = scanner.nextInt();
 
-        System.out.println();   // New line
+        System.out.println();   
 
         String[] names = new String[n];
         long[] incomes = new long[n];
@@ -23,7 +23,7 @@ public class TaxCalculator {
             names[i] = scanner.next();
             System.out.println("Enter " + names[i] + "'s Annual Income: ");
             incomes[i] = scanner.nextLong();
-            System.out.println();   // new line
+            System.out.println();   
         }
 
         scanner.close();
