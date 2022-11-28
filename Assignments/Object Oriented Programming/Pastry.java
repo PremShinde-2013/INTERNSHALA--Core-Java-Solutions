@@ -1,4 +1,4 @@
-/*** Pastry Class ***/
+
 public class Pastry extends Cake {
 
     @Override
