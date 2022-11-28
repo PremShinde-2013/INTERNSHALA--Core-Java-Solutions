@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class StudentId {
     public static void main(String[] args) {
 
-        /* Student ID Card Generator */
+        
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter Name: ");
