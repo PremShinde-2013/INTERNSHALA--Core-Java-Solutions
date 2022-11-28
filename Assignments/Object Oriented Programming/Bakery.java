@@ -1,16 +1,16 @@
 import java.util.*;
 
-class Cake1 // Parent Class
+class Cake1 
 {
     String name;
     float price;
-    // GETTER
+    
     public String getName()
     {	return name;	}
     public float getPrice()
     {	return price;	}
 
-    // SETTER
+    
     public void setName(String newName)
     {	this.name = newName;	}
     public void setPrice(float newPrice)
@@ -21,7 +21,7 @@ class Cake1 // Parent Class
     }
 }
 
-class Pastry1 extends Cake1 // Child Class
+class Pastry1 extends Cake1 
 {
     @Override
     void display()
@@ -30,17 +30,17 @@ class Pastry1 extends Cake1 // Child Class
     }
 }
 
-public class Bakery // Bakery Class
+public class Bakery 
 {
     public static void main(String[] args)
     {
-        /* `Cake` & `Pastry` Object creation */
+        
         Cake cake1 = new Cake();
         Cake cake2 = new Cake();
         Pastry pastry1 = new Pastry();
         Pastry pastry2 = new Pastry();
 
-        // Getter & Setter
+        
         cake1.setName("Chocolate Brownie");
         cake1.setPrice(250f);
         cake2.setName("Chocolate Maple");
@@ -50,7 +50,7 @@ public class Bakery // Bakery Class
         pastry2.setName("Choco Truffle");
         pastry2.setPrice(40f);
 
-        /* ArrayList for `Cakes` & `Pastries` */
+      
         List<Cake> cakesList = new ArrayList<Cake>();
         cakesList.add(cake1);
         cakesList.add(cake2);
@@ -63,8 +63,8 @@ public class Bakery // Bakery Class
         System.out.println();
         System.out.println("Special Cakes                       ");
         System.out.println("------------------------------------");
-		/*cake1.display();
-		cake2.display();*/
+		
+		
         for (Cake object : cakesList)
         {
             object.display();
@@ -73,8 +73,8 @@ public class Bakery // Bakery Class
         System.out.println();
         System.out.println("Special Pastries                    ");
         System.out.println("------------------------------------");
-		/*pastry1.display();
-		pastry2.display();*/
+		
+		
 
         for (Pastry object : pastriesList)
         {
